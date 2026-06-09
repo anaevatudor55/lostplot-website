@@ -116,7 +116,7 @@ img {
 
 /*HERO */ 
 #hero {
-  background: linear-gradient(rgba(var(--c-brand-rgb), 0.438), rgba(var(--c-brand-rgb), 0.438)), url(images/herowhiteblack.png);
+  background: linear-gradient(rgba(var(--c-brand-rgb), 0.438), rgba(var(--c-brand-rgb), 0.438)), url(./images/herowhiteblack.png);
   background-position: center;
   background-size: cover;
 }

@@ -472,5 +472,22 @@
       });
     </script> 
 
+    <!--Cookie banner-->
+  <div id="cookie-banner" style="position:fixed; bottom:0; left:0; right:0; background:#000; color:#fff; padding:16px 24px; display:flex; align-items:center; justify-content:space-between; z-index:9999; font-family:'Fredoka', sans-serif;">
+    <p style="margin:0; font-size:0.9rem;">We use cookies to improve your experience. By using this site you agree to our use of cookies.</p>
+    <button onclick="acceptCookies()" style="background:#800e13; color:white; border:none; padding:8px 20px; border-radius:6px; cursor:pointer; font-family:'Fredoka', sans-serif; font-size:0.9rem; margin-left:20px; white-space:nowrap;">Accept</button>
+  </div>
+  
+  <script>
+    function acceptCookies() {
+      document.getElementById('cookie-banner').style.display = 'none';
+      localStorage.setItem('cookiesAccepted', 'true');
+    }
+  
+    if (localStorage.getItem('cookiesAccepted') === 'true') {
+      document.getElementById('cookie-banner').style.display = 'none';
+    }
+  </script>
+
   </body>
 </html>
